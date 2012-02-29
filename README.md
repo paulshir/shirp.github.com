@@ -41,6 +41,3 @@ The master and gh-pages branch do not share the same ancestry. Please treat them
 ## License
 
 [Creative Commons](http://creativecommons.org/licenses/by-nc-sa/3.0/)
-=======
-README GOES IN HERE
->>>>>>> bc40778b64ec5cd9310f8914bba49a32a2e58ec4
