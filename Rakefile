@@ -45,6 +45,12 @@ task :post do
   abort("rake aborted: '#{CONFIG['posts']}' directory not found.") unless FileTest.directory?(CONFIG['posts'])
   title = ENV["title"] || "new-post"
   slug = title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
+  published = ENV["published"] || "false"
+  publish = published.downcase
+  if publish != "true"
+	  publish = "false"
+  end
+
   filename = File.join(CONFIG['posts'], "#{Time.now.strftime('%Y-%m-%d')}-#{slug}.#{CONFIG['post_ext']}")
   if File.exist?(filename)
     abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
@@ -57,6 +63,7 @@ task :post do
     post.puts "title: \"#{title.gsub(/-/,' ')}\""
     post.puts "category: "
     post.puts "tags: []"
+    post.puts "published: #{publish}"
     post.puts "---"
     post.puts "{% include JB/setup %}"
   end
@@ -68,6 +75,11 @@ end # task :post
 desc "Create a new page."
 task :page do
   name = ENV["name"] || "new-page.md"
+  published = ENV["published"] || "false"
+  publish = published.downcase
+  if publish != "true"
+	  publish = "false"
+  end
   filename = File.join(SOURCE, "#{name}")
   filename = File.join(filename, "index.html") if File.extname(filename) == ""
   title = File.basename(filename, File.extname(filename)).gsub(/[\W\_]/, " ").gsub(/\b\w/){$&.upcase}
@@ -81,6 +93,7 @@ task :page do
     post.puts "---"
     post.puts "layout: page"
     post.puts "title: \"#{title}\""
+    post.puts "published: #{publish}"
     post.puts "---"
     post.puts "{% include JB/setup %}"
   end
