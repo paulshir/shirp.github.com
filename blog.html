@@ -9,12 +9,22 @@ group: navigation
 {% assign posts_collate = site.posts %}
 <ul>
 	{% for post in site.posts limit:3 %}
+		{% capture content_size %}
+			{{ post.content | size }}
+		{% endcapture %}
+
 		<li><article>
 	    		<header>
 				<h2><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h2>
 			</header>
 			<div>
-				{{ post.content }}
+				{% if content_size > 500 %}
+					{{ post.content | truncate:500 }}
+					...<br />
+					<a href="{{ BASE_PATH }}{{post.url }}">Read More</a>
+				{% else %}
+					{{ post.content }}
+				{% endif %}
 			</div>
 			<footer>
 				<em>Posted on {{ post.date | date_to_string }}</em></br>
