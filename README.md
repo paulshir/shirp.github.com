@@ -1,5 +1,6 @@
-
-#Personal Landing Page For Paul Shirley
+[shirp-w][http://shirp.github.com]
+[shirp-r][http://github.com/shirp]
+#Personal Landing Page For [Paul Shirley][shirp-w]
 
 This is a Jekyll powered blog. I am going to use it and attempt to create my own theme for it.
 
