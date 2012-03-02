@@ -29,6 +29,7 @@ If group:navigation is added to the top of the page it will appear in the naviga
 
 ### Code Blocks
 Code blocks can be inserted by putting 4 spaces of a tab in front of each line. They can also be declared using the 
+    Helo
     {% highlight codetype %}
         Code Goes Here
     {% endhighlight %}
