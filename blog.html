@@ -8,7 +8,7 @@ group: navigation
 
 <div class="content blog">
 	{% for post in site.posts limit:3 %}
-		<article>
+		<article id="blogarticle_{{ forloop.index}}">
 			<header>
 				<h2><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h2>
 			</header>
