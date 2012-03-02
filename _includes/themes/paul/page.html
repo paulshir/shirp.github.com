@@ -7,7 +7,7 @@
 		{% endif %}
 
 		<header>
-			<h2><a href="{{ BASE_PATH}}{{ page.url}}">{{ page.title }}</a></h2>
+			<h2> {% if page.header %}{{ page.header }}{% else %}{{ page.title }}{% endif %}</h2>
 		</header>
 				
 		<section>

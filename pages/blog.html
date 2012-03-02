@@ -5,6 +5,9 @@ header : Recent Posts
 group: navigation
 ---
 {% include JB/setup %}
+<div class="header blog">
+	<h2> {% if page.header %}{{ page.header }}{% else %}{{ page.title }}{% endif %}</h2>
+</div>
 
 <div class="content blog">
 	{% for post in site.posts limit:3 %}
