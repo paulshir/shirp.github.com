@@ -1,0 +1,18 @@
+<div class="content page">
+	<article>
+		{% if page.featured_image %}
+		<aside>
+			<figure><img src="{{ page.featured_image }}" alt="{{ page.title }}" /></figure>
+		</aside>
+		{% endif %}
+
+		<header>
+			<h2><a href="{{ BASE_PATH}}{{ page.url}}">{{ page.title }}</a></h2>
+		</header>
+				
+		<section>
+			{{ content }}
+		</section>
+		
+	<article>
+</div>

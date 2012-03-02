@@ -1,16 +1,13 @@
 ---
 layout: post
-title: "new post"
+title: "Code View Test"
 category: 
 tags: []
 published: true
 ---
 {% include JB/setup %}
 
-# Code View Test Post
-
-
-## Without Highlights
+#### Without Highlights
 Some code will go in a box below here
 
     def foo
@@ -19,13 +16,11 @@ Some code will go in a box below here
 
 
 
-## With Highlights
+#### With Highlights
 Some code will go in here below
 {% highlight ruby%}
 def foo
   puts 'foo'
 end
 {% endhighlight %}
-
-
 

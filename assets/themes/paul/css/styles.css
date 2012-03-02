@@ -1,0 +1,87 @@
+html {
+
+}
+
+body {
+
+}
+
+header {
+	margin-top: 2.5em;
+}
+
+nav {
+}
+
+nav ul {
+	list-style: none;
+	position:fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 2.5em;
+	z-index: 10000;
+	overflow: visible;
+}
+
+nav ul li {
+	float: left;
+}
+
+nav ul li a {
+	display: block;
+}
+
+footer {
+
+}
+
+.content {
+
+}
+
+.content .page {
+
+}
+
+.content .post {
+
+}
+
+.content .blog {
+
+}
+
+article {
+
+}
+
+article header {
+
+}
+
+article footer {
+
+}
+
+article section {
+
+}
+
+article aside {
+
+}
+
+article aside figure {
+
+}
+
+article aside figure img {
+
+}
+
+.comments {
+
+}
+
+

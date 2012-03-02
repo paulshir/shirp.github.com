@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>{{ site.title }} | {{ page.title }}</title>
+		{% if page.description %} <meta name="description" content="{{ page.description }}" />{% endif %}
+		<meta name="author" content="{{ site.author.name }}" />
+
+		<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+		<link rel="stylesheet" type="text/css" href="{{ ASSET_PATH }}/css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="{{ ASSET_PATH }}/css/syntax.css" />
+		<link rel="stylesheet" type="text/css" href="{{ ASSET_PATH }}/css/styles.css" />
+
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="{{ HOME_PATH }}" id="home">{{ site.title }}</a></li>
+					{% assign pages_list = site.pages %}
+					{% assign group = 'navigation' %}
+					{% include JB/pages_list %}
+				</ul>
+			</nav>
+			<h1>{{ site.title }}</h1>
+		</header>
+		
+		{{ content }}
+
+		<footer>
+			Footer Content Will Go In Here
+		</footer>
+
+		{% include JB/analytics %}
+
+	</body>
+</html>
+
+
+

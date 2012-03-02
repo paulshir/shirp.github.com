@@ -1,45 +1,57 @@
 ---
 layout: page
-title: Hello World!
+title: "This is a work in progress"
+published: true
 ---
 {% include JB/setup %}
 
-Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
+github: http://github.com/shirp/shirp.github.com
+home: http://shirp.github.com
 
-Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllbootstrap.com)
+## Welcome ##
 
-## Update Author Attributes
+Welcome to my blog. This is a work in progress as I am trying to develop a theme for this blog. I plan to use it maybe to post updates but mainly just to have a little site about me with my cv and resume etc etc.
 
-In `_config.yml` remember to specify your own data:
-    
-    title : My Blog =)
-    
-    author :
-      name : Name Lastname
-      email : blah@email.test
-      github : username
-      twitter : username
+## Backend ##
 
-The theme should reference these variables whenever needed.
-    
-## Sample Posts
+I'm running this blog on github pages and using jekyll to run as static blog. I'll post more about this in the future.  
+You can view my code [here][github]
 
-This blog contains sample posts which help stage pages and blog data.
-When you don't need the samples anymore just delete the `_posts/core-samples` folder.
+## Theme ##
 
-    $ rm -rf _posts/core-samples
+I don't know what I'm going for yet but sure we'll see
 
-Here's a sample "posts list".
+***
+## Test Code ##
+This next area is going to be areas to see how the theme works with different elements  
+The first part will be a list
+* Item 1:
+* Item 2:
+* Item 3:
+ * Item 3a: Nested 1 deep
+  * Item 3ai: Nested 2 deep
 
-<ul class="posts">
-  {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
+This *sentence* is looking at **different** formatting ***options***  
+It is using __bold__, _italics_, and a ___combination of both___
 
-## To-Do
+This sentance `contains some inline code` and the following segment is going to be a code block.
 
-This theme is still unfinished. If you'd like to be added as a contributor, [please fork](http://github.com/plusjade/jekyll-bootstrap)!
-We need to clean up the themes, make theme usage guides with theme-specific markup examples.
+    for (int i=0; i<10; i++){
+       printf("%d\n", i);
+    }
 
+The next sentence is going to repeat the same code with syntax highlighting
 
+{% highlight c %}
+for (int i=0; i<10; i++){
+  printf("%d\n", i);
+}
+{% endhighlight %}
+
+Next I am going to place a link back to this website [page][home] to view what links look like.
+
+>The final part for now is a block quote
+>Which is spread accross
+>Multiple Lines
+
+That's all Folks

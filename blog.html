@@ -1,20 +1,18 @@
 ---
-layout: page
+layout: default
 title : Blog
 header : Recent Posts
 group: navigation
 ---
 {% include JB/setup %}
 
-{% assign posts_collate = site.posts %}
-<ul>
+<div class="content blog">
 	{% for post in site.posts limit:3 %}
-
-		<li><article>
-	    		<header>
+		<article>
+			<header>
 				<h2><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h2>
 			</header>
-			<div>
+			<section>
 				{% if post.content.size  > 3000 %}
 					{{ post.content | truncate:3000 }}
 					<br />...<br />
@@ -22,16 +20,15 @@ group: navigation
 				{% else %}
 					{{ post.content }}
 				{% endif %}
-			</div>
+			</section>
 			<footer>
 				<em>Posted on {{ post.date | date_to_string }}</em></br>
 				<a href="{{ production_url }}{{ BASE_PATH }}{{ post.url }}#disqus_thread">{{post.title}}</a>
 			</footer>	    	
-		</article></li>
-	<hr />
+		</article>
 	{% endfor %}
-</ul>
-<a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Older Posts (Archive)</a>
+	<a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Older Posts (Archive)</a>
+</div>
 
 <script type="text/javascript">
 	 /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
