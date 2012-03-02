@@ -31,7 +31,12 @@
 		{{ content }}
 
 		<footer>
-			Footer Content Will Go In Here
+			<ul>
+				{% assign pages_list = site.pages %}
+				{% assign group = 'footer' %}
+				{% include JB/pages_list %}
+			</ul>
+			&copy {{ site.author.name }} 2012
 		</footer>
 
 		{% include JB/analytics %}
