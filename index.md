@@ -5,8 +5,8 @@ published: true
 ---
 {% include JB/setup %}
 
-github: http://github.com/shirp/shirp.github.com
-home: http://shirp.github.com
+[github]: http://github.com/shirp/shirp.github.com
+[home]: http://shirp.github.com
 
 ## Welcome ##
 
@@ -50,7 +50,7 @@ for (int i=0; i<10; i++){
 
 Next I am going to place a link back to this website [page][home] to view what links look like.
 
->The final part for now is a block quote
+>The final part for now is a block quote  
 >Which is spread accross
 >Multiple Lines
 
