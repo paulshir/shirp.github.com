@@ -27,8 +27,10 @@ To change a theme use  rake theme:switch name="THEME-NAME"  This goes through ev
 ### Navbar
 If `group:navigation` is added to the top of the page it will appear in the navigation bar. Need to look at this in more depth to apply it elsewhere in the site
 
-### Code Blocks
-Code blocks can be inserted by putting 4 spaces of a tab in front of each line.
+Attmpt to put code here
     def foo
       put 'foo'
-    end 
+    end
+
+
+And finish hopefully
