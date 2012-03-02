@@ -27,6 +27,9 @@ To change a theme use  rake theme:switch name="THEME-NAME"  This goes through ev
 ### Navbar
 If `group:navigation` is added to the top of the page it will appear in the navigation bar. Need to look at this in more depth to apply it elsewhere in the site
 
+### Code
+To put code into a code block you simply indent all the text by one tab or 4 spaces
+
 Another way to put text into a codeblock when using jekyll is to use the following code sequence.
 
     {% highlight codetype [linenos]  %}
