@@ -28,14 +28,7 @@ To change a theme use  rake theme:switch name="THEME-NAME"  This goes through ev
 If group:navigation is added to the top of the page it will appear in the navigation bar. Need to look at this in more depth to apply it elsewhere in the site
 
 ### Code Blocks
-Code blocks can be inserted by putting 4 spaces of a tab in front of each line. They can also be declared using the 
-    Helo
-    {% highlight codetype %}
-        Code Goes Here
-    {% endhighlight %}
-I have come accross the problem thought that if you use this highlight method the standard method of adding the spaces doesn't work for that page. The readme page doesn't use liquify and aka why it works here. Also note that if you include 2 spaces at the end of the line before it doesn't view it as a code segment.
-
-
-
-
-
+Code blocks can be inserted by putting 4 spaces of a tab in front of each line.
+    def foo
+      put 'foo'
+    end 
