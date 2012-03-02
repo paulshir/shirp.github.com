@@ -29,12 +29,11 @@ If group:navigation is added to the top of the page it will appear in the naviga
 
 ## Code Blocks
 Code blocks can be inserted by putting 4 spaces of a tab in front of each line. They can also be declared using the  
-{% capture text %}
-    |. highlight codetype .|
+    {{ highlight codetype }}
       Code Goes Here
-    |. endhighlight .|
-{% endcapture %}
-{% include JB/liquid_raw %}
+    {{ endhighlight }}
+I have come accross the problem thought that if you use this highlight method the standard method of adding the spaces doesn't work for that page
+
 
 
 
