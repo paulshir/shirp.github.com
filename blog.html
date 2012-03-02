@@ -9,18 +9,15 @@ group: navigation
 {% assign posts_collate = site.posts %}
 <ul>
 	{% for post in site.posts limit:3 %}
-		{% capture content_size %}
-			{{ post.content | size }}
-		{% endcapture %}
 
 		<li><article>
 	    		<header>
 				<h2><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h2>
 			</header>
 			<div>
-				{% if content_size > 500 %}
-					{{ post.content | truncate:500 }}
-					...<br />
+				{% if post.content.size  > 3000 %}
+					{{ post.content | truncate:3000 }}
+					<br />...<br />
 					<a href="{{ BASE_PATH }}{{post.url }}">Read More</a>
 				{% else %}
 					{{ post.content }}
@@ -34,11 +31,11 @@ group: navigation
 	<hr />
 	{% endfor %}
 </ul>
-<a href="{{ BASE_PATH }}archive.html">Older Posts (Archive)</a>
+<a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Older Posts (Archive)</a>
 
 <script type="text/javascript">
 	 /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-	 var disqus_shortname = 'shirp'; // required: replace example with your forum shortname
+var disqus_shortname = '{{ site.JB.comments.disqus.short_name }}'; // required: replace example with your forum shortname
 
 	 /* * * DON'T EDIT BELOW THIS LINE * * */
 	 (function () {
