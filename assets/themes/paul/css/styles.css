@@ -3,7 +3,9 @@ html {
 }
 
 body {
-
+	width: 60em;
+	margin: 0 auto;
+	overflow: auto;
 }
 
 header {
@@ -11,9 +13,6 @@ header {
 }
 
 nav {
-}
-
-nav ul {
 	list-style: none;
 	position:fixed;
 	top: 0;
@@ -22,6 +21,21 @@ nav ul {
 	height: 2.5em;
 	z-index: 10000;
 	overflow: visible;
+	background: #333333;
+}
+
+nav a,
+nav a:visited{
+	color: #ffffff;
+}
+
+nav a:active {
+ 	color: #00ff00;
+}
+
+nav ul {
+	width: 60em;
+	margin: 0 auto;
 }
 
 nav ul li {
@@ -33,11 +47,14 @@ nav ul li a {
 }
 
 footer {
-
+	width: 60em;
+	background: #AAAAAA;
 }
 
 .content {
-
+	width: 60em;
+	margin: 0 auto;
+	overflow: auto;
 }
 
 .content .page {
@@ -52,22 +69,75 @@ footer {
 
 }
 
-article {
+aside {
+	width: 10em;
+	padding: 0;
+	margin: 0;
+	float: left;
+	background: #eeeeee;
+}
 
+.comments {
+	width: 45em;
+	background: #eeeeee;
+}
+
+
+
+
+article {
+	padding: 0em;
+	width: 45em;
+}
+
+.articles {
+	padding: 0;
+	width: 45em;
+	float:left;
 }
 
 article header {
+	width: 15em;
+	margin-top: 2.4em;
+	float: left;
+}
 
+article header h1,
+article header h2{
+	font-size: 1.313em;
+	background: #dddddd;
+	margin: 0 0;
+	padding: 0;
+	
+}
+
+article header h3 {
+	font-size: 1em;
+	margin: 0.5em 0;
+	padding: 0;
+}
+
+article header time,
+article header span {
+	font-size: 0.75em;
+	margin: 0;
+	padding: 0;
+}
+
+article header span {
+	float: right;
 }
 
 article footer {
-
+	width: 30em;
 }
 
-article section {
-
+article .article-content {
+	float: left;
+	width: 28em;
+	padding: 1em;
+	margin: 0;
 }
-
 article aside {
 
 }
@@ -80,8 +150,10 @@ article aside figure img {
 
 }
 
-.comments {
-
+article .prevnext {
+	width: 43em;
+	margin: 0;
+	padding:1em;
+	float: left;
 }
-
 

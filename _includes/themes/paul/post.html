@@ -7,18 +7,25 @@
 		{% endif %}
 
 		<header>
+			<time>{{ page.date | date_to_long_string }}</time>
+			<span>{{ page.category }}</span>
 			<h2>{{ page.title }}</h2>
+			<h3>{{ site.author.name}}</h3>
 		</header>
+		<!--
 		<footer>
 			<em>Published on {{ page.date | date_to_long_string }}</em>
 			<address>
 				By <a href="http://twitter.com/#!/{{ site.author.twitter }}">{{ site.author.name }}</a>
 			</address>
 		</footer>
-		<section>
-			{{ content }}
-		</section>
-		<div>		
+		-->
+		<div class="article-content">
+			<section>
+				{{ content }}
+			</section>
+		</div>
+		<div class="prevnext">		
 			<ul>
 				{% if page.previous %}
 				<li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
@@ -34,9 +41,9 @@
 			</ul>
 		</div>
 	</article>
-
-	<div class="comments">
+	
+	<aside class="comments">
 		{% include JB/comments %}
-	</div>
+	</aside>
 	
 </div>

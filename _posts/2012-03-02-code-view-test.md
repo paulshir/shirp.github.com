@@ -24,3 +24,4 @@ def foo
 end
 {% endhighlight %}
 
+That is the end of this post

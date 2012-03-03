@@ -5,32 +5,38 @@ header : Recent Posts
 group: navigation
 ---
 {% include JB/setup %}
-<div class="header blog">
+<div class="header content blog">
 	<h2> {% if page.header %}{{ page.header }}{% else %}{{ page.title }}{% endif %}</h2>
 </div>
 
 <div class="content blog">
+	<div class="articles">
 	{% for post in site.posts limit:3 %}
 		<article id="blogarticle_{{ forloop.index}}">
 			<header>
 				<h2><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h2>
 			</header>
-			<section>
-				{% if post.content.size  > 3000 %}
-					{{ post.content | truncate:3000 }}
-					<br />...<br />
-					<a href="{{ BASE_PATH }}{{post.url }}">Read More</a>
-				{% else %}
-					{{ post.content }}
-				{% endif %}
-			</section>
+			<div class="article-content">
+				<section>
+					{% if post.content.size  > 3000 %}
+						{{ post.content | truncate:3000 }}
+						<br />...<br />
+						<a href="{{ BASE_PATH }}{{post.url }}">Read More</a>
+					{% else %}
+						{{ post.content }}
+					{% endif %}
+				</section>
+			<div>
 			<footer>
 				<em>Posted on {{ post.date | date_to_string }}</em></br>
 				<a href="{{ production_url }}{{ BASE_PATH }}{{ post.url }}#disqus_thread">{{post.title}}</a>
 			</footer>	    	
 		</article>
 	{% endfor %}
-	<a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Older Posts (Archive)</a>
+	</div>
+	<aside>
+		<a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Older Posts (Archive)</a>
+	</aside>
 </div>
 
 <script type="text/javascript">
