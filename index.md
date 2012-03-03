@@ -25,11 +25,12 @@ I don't know what I'm going for yet but sure we'll see
 ## Test Code ##
 This next area is going to be areas to see how the theme works with different elements  
 The first part will be a list
-* Item 1:
-* Item 2:
-* Item 3:
- * Item 3a: Nested 1 deep
-  * Item 3ai: Nested 2 deep
+
+* Item 1
+* Item 2
+* Item 3
+
+Apparently Nested Lists don't work for jekyll. See [link](https://github.com/mojombo/jekyll/issues/190)
 
 This *sentence* is looking at **different** formatting ***options***  
 It is using __bold__, _italics_, and a ___combination of both___
