@@ -1,0 +1,148 @@
+html {
+
+}
+
+body {
+	width: 60em;
+	margin: 0 auto;
+	overflow: auto;
+}
+
+header {
+	margin-top: 2.5em;
+}
+
+nav {
+	/*list-style: none;
+	position:absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 2.5em;
+	z-index: 10000;
+	overflow: visible;
+	background: #333333;*/
+	list-style: none;
+	background: #333333;
+	margin: 0;
+	padding: 0;
+	height: 2.5em
+}
+
+nav a,
+nav a:visited{
+	color: #ffffff;
+}
+
+nav a:active {
+ 	color: #00ff00;
+}
+
+nav ul {
+	width: 60em;
+	margin: 0 auto;
+}
+
+nav ul li {
+	float: left;
+}
+
+nav ul li a {
+	display: block;
+}
+
+footer {
+	width: 60em;
+	background: #AAAAAA;
+}
+
+
+/* General Content Styles Here */
+
+.content {
+	width: 60em;
+	margin: 0 auto;
+	overflow: auto;
+}
+
+aside {
+	width: 10em;
+	padding: 0;
+	margin: 0;
+	float: left;
+	background: #eeeeee;
+}
+
+
+
+
+
+
+
+
+.post .comments {
+	width: 45em;
+	background: #eeeeee;
+}
+
+article {
+	padding: 0em;
+	width: 45em;
+}
+
+.articles {
+	padding: 0;
+	width: 45em;
+	float:left;
+}
+
+article header {
+	width: 15em;
+	margin-top: 2.4em;
+	float: left;
+}
+
+article header h1,
+article header h2{
+	font-size: 1.313em;
+	background: #dddddd;
+	margin: 0 0;
+	padding: 0;
+	
+}
+
+article header h3 {
+	font-size: 1em;
+	margin: 0.5em 0;
+	padding: 0;
+}
+
+article header time,
+article header span {
+	font-size: 0.75em;
+	margin: 0;
+	padding: 0;
+}
+
+article header span {
+	float: right;
+}
+
+article footer {
+	width: 30em;
+}
+
+article .article-content {
+	float: left;
+	width: 28em;
+	padding: 1em;
+	margin: 0;
+}
+
+article .post .prevnext {
+	width: 43em;
+	margin: 0;
+	padding:1em;
+	float: left;
+}
+

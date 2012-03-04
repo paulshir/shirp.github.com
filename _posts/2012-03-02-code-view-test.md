@@ -3,11 +3,12 @@ layout: post
 title: "Code View Test"
 category: 
 tags: []
+featured_image: /images/beach.jpg
 published: true
 ---
 {% include JB/setup %}
 
-#### Without Highlights
+### Without Highlights
 Some code will go in a box below here
 
     def foo
@@ -16,7 +17,7 @@ Some code will go in a box below here
 
 
 
-#### With Highlights
+### With Highlights
 Some code will go in here below
 {% highlight ruby%}
 def foo

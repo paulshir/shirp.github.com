@@ -1,20 +1,41 @@
+/* 
+ * Class content is used for the
+ * positioning and size of body
+ * level elements. Such categories
+ * include header, footer and the 
+ * main content area
+ */
+
+/* Global Styles */
 html {
 
 }
 
 body {
+
+}
+
+a {
+	text-decoration: none;
+}
+
+.content {
 	width: 60em;
 	margin: 0 auto;
 	overflow: auto;
 }
 
-header {
+/* Header Styles */
+header.topheader hgroup{
 	margin-top: 2.5em;
 }
 
+
+/* ## Nav Bar ## */
+
 nav {
 	list-style: none;
-	position:fixed;
+	position:absolute;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -29,13 +50,9 @@ nav a:visited{
 	color: #ffffff;
 }
 
+nav a:hover,
 nav a:active {
  	color: #00ff00;
-}
-
-nav ul {
-	width: 60em;
-	margin: 0 auto;
 }
 
 nav ul li {
@@ -46,114 +63,140 @@ nav ul li a {
 	display: block;
 }
 
+/* Footer Styles */
+
 footer {
+
+}
+
+/* Content Styles - General */
+
+/* Content Styles - Page */
+
+/* Content Styles - Post */
+
+/* Content Styles - Recent */
+
+.recent article {
 	width: 60em;
-	background: #AAAAAA;
-}
-
-.content {
-	width: 60em;
-	margin: 0 auto;
-	overflow: auto;
-}
-
-.content .page {
-
-}
-
-.content .post {
-
-}
-
-.content .blog {
-
-}
-
-aside {
-	width: 10em;
+	height: 45em;
+	margin: 1em 0;
 	padding: 0;
-	margin: 0;
-	float: left;
-	background: #eeeeee;
+	background: #eee;
 }
 
-.comments {
-	width: 45em;
-	background: #eeeeee;
-}
-
-
-
-
-article {
-	padding: 0em;
-	width: 45em;
-}
-
-.articles {
-	padding: 0;
-	width: 45em;
-	float:left;
-}
-
-article header {
-	width: 15em;
-	margin-top: 2.4em;
-	float: left;
-}
-
-article header h1,
-article header h2{
+.recent article h1,
+.recent article h2 {
 	font-size: 1.313em;
-	background: #dddddd;
-	margin: 0 0;
+	margin: 0;
 	padding: 0;
+}
+
+.recent article h3 {
+	font-size: 1em;
+	margin: 0em;
+	padding: 0;
+}
+
+.recent article h4,
+.recent article h5,
+.recent article h6 {
+	font-size: 1em;
+	margin: 0em;
+	padding: 0;
+}
+
+.recent .left {
+	float: left;
+	width: 25.75em;
+	margin-right: 0.5em;
+}
+
+.recent article a,
+.recent article a:visited,
+.recent article a:hover,
+.recent article a:active {
+	color: #000;
+}
+
+.recent article header {
+	width: 25.75em;
+	margin: 0;
+	padding: 2em 0;
+}
+
+.recent article header h1,
+.recent article header h2 {
+	background: #ddd;
+	padding: 0.5em 1em;
+}
+
+.recent article header time,
+.recent article header span {
+	font-size: 0.75em;
+	margin: 0;
+	padding: 0 1em;
 	
 }
 
-article header h3 {
-	font-size: 1em;
-	margin: 0.5em 0;
-	padding: 0;
-}
-
-article header time,
-article header span {
-	font-size: 0.75em;
-	margin: 0;
-	padding: 0;
-}
-
-article header span {
+.recent article header span {
 	float: right;
 }
 
-article footer {
-	width: 30em;
-}
-
-article .article-content {
-	float: left;
-	width: 28em;
-	padding: 1em;
+.recent article aside {
+	width: 25.75em;
+	height: 19.6875em;
 	margin: 0;
-}
-article aside {
-
+	padding: 0;
 }
 
-article aside figure {
-
+.recent article aside img {
+	width: 21.75em;
+	height: 15.6875em;
+	border-style: solid;
+	border-color: #fff;
+	border-width: 0.5em;
+	margin: 0.5em;
+	padding: 0;
 }
 
-article aside figure img {
-
+.recent article .article-content {
+	float: left;
+	width: 32.75em;
+	height: 43;
+	padding: 0;
+	margin: 0 0.5em;
+	overflow: hidden;
 }
 
-article .prevnext {
-	width: 43em;
-	margin: 0;
-	padding:1em;
+.recent article .article-content p:first-child {
+	margin-top: 0;
+}
+
+.recent article footer {
+	float: right;
+	width: 32.75em;
+	padding: 0;
+	margin: 0 0.5em;
+}
+
+.recent article footer a {
 	float: left;
 }
+
+.recent article footer span {
+	float: right;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
 
